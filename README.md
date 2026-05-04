@@ -32,7 +32,7 @@ Kullanıcılar istedikleri şehir için **anlık hava durumu verilerine** kolay 
 1. Bu repoyu klonlayın:
 
    ```bash
-   git clone https://github.com/kullaniciadi/hava-durumu-app.git
+   git clone https://github.com/ismaileyg/hava-durumu-app.git
    ```
 
 2. Proje klasörüne girin:

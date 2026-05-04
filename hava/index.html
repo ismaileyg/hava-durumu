@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/img.png" type="image/png">
+</head>
+<body>
+
+<div id="splash" class="splash">
+  <div class="splash-card">
+    <h1>👋 Hoşgeldiniz</h1>
+    <p>Hava Durumu Paneli</p>
+  </div>
+</div>
+
+<canvas id="fx"></canvas>
+
+<div class="app">
+
+  <header>
+    <h1>🌤 Hava Durumu Paneli</h1>
+  </header>
+
+  <div class="search">
+    <input id="cityInput" placeholder="Şehir yaz...">
+    <button onclick="App.search()">Ara</button>
+  </div>
+
+  <div class="quick">
+    <button onclick="App.geo()">📍 Konum</button>
+  </div>
+
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p>Yükleniyor...</p>
+  </div>
+
+  <div id="current" class="card"></div>
+
+  <div class="section">
+    <h3>⏱ Saatlik</h3>
+    <div id="hourly" class="scroll"></div>
+  </div>
+
+  <div class="section">
+    <h3>📊 7 Günlük</h3>
+    <div id="daily" class="scroll"></div>
+  </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/ui.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
